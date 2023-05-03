@@ -13,29 +13,30 @@ function setupInput() {
 }
 
 async function handleInput(e) {
+  console.log(e);
   switch (e.key) {
-    case "W":
+    case "w":
       if (!canMoveUp()) {
         setupInput();
         return;
       }
       await moveUp();
       break;
-    case "S":
+    case "s":
       if (!canMoveDown()) {
         setupInput();
         return;
       }
       await moveDown();
       break;
-    case "A":
+    case "a":
       if (!canMoveLeft()) {
         setupInput();
         return;
       }
       await moveLeft();
       break;
-    case "D":
+    case "d":
       if (!canMoveRight()) {
         setupInput();
         return;
