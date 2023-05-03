@@ -13,7 +13,6 @@ function setupInput() {
 }
 
 async function handleInput(e) {
-  console.log(e);
   switch (e.key) {
     case "w":
       if (!canMoveUp()) {
